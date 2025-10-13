@@ -1,0 +1,9 @@
+numeros = [10, 20, 30, 40, 50]
+
+num = int(input("Digite um número: "))
+
+if num in numeros:
+    indice = numeros.index(num)
+    print(f"O número {num} está na lista, no índice {indice}.")
+else:
+    print(f"O número {num} NÃO está na lista.")

@@ -1,0 +1,15 @@
+#lista dentro de outra lista
+produto1 = ["maçã",10,0.30]
+produto2 = ["laranja",5,0.75]
+produto3 = ["uva",4,0.98]
+compras = [produto1,produto2,produto3]
+
+#print(compras)
+#print(compras[1])
+#print(compras[1][0])
+
+for produto in compras:
+    print(f"Nome : {produto[0]}")
+    print(f"quantidade : {produto[1]}")
+    print(f"preço : {produto[2]}")
+    

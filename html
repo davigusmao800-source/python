@@ -1,89 +1,35 @@
-/* --------------------------- */
-/*      ESTILO MR OLYMPIA      */
-/* --------------------------- */
-
-/* Fundo com gradiente Mr. Olympia */
+/* 🖼️ Fundo da página com imagem */
 body {
     margin: 0;
-    background: linear-gradient(180deg, #D60000, #FF3B3B);
+    background-image: url('minhaimagem.jpg'); /* coloque o nome da sua imagem */
+    background-size: cover;       /* imagem preenche a tela */
+    background-position: center;  /* centralizada */
+    background-attachment: fixed; /* efeito parallax */
     font-family: Arial, sans-serif;
-    color: #ffffff;
 }
 
-/* Header com preto clássico de academia */
-header {
-    background-color: #1A1A1A;
-    padding: 15px 30px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+/* 🔥 Navbar fixa e sem ser afetada pelo fundo */
+nav {
+    background-color: #1A1A1A; /* cor sólida */
+    padding: 15px 20px;
     position: sticky;
     top: 0;
+    z-index: 1000; /* fica por cima da imagem */
 }
 
-/* Logo */
-header img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-/* Menu */
 nav a {
-    color: #ffffff;
-    text-decoration: none;
+    color: white;
     margin-right: 15px;
-    font-size: 18px;
+    text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover {
-    color: #FF3B3B;
-    transition: 0.3s;
-}
-
-/* Container de conteúdo */
+/* 📦 Container no meio da página */
 .container {
     max-width: 900px;
-    margin: 40px auto;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 25px;
-    border-radius: 12px;
-}
-
-/* Títulos estilo competição */
-h1, h2 {
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 2px;
-    text-align: center;
-}
-
-/* Cards de atletas */
-.cards {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card {
-    background: #1A1A1A;
-    padding: 15px;
-    width: 180px;
-    border-radius: 12px;
-    text-align: center;
+    margin: 40px auto;               /* centraliza */
+    background: rgba(0, 0, 0, 0.6);  /* fundo escuro transparente */
+    padding: 30px;
+    border-radius: 15px;
     color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.card h3 {
-    margin-top: 10px;
-    color: #FF3B3B;
-    font-weight: bold;
 }
